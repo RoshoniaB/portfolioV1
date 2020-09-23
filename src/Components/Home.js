@@ -3,7 +3,7 @@ import { Nav as ReactNav, Navbar } from 'react-bootstrap';
 import './home.css';
 
 export default function Home(props) {
-	let toggle = props.props.name
+	// let toggle = props.props.name
 		// if (toggle === 'Light'){
 		// 	console.log('its light')
 		// }
