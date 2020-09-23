@@ -1,0 +1,26 @@
+/* About */
+.aboutContainer {
+    color: #787878;
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.aTitle {
+	background: -webkit-linear-gradient(#fae8ba, #d59d11);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 400%;
+}
+.aHeading{
+    font-size: 500%;
+}
+.aboutContent{
+    font-size: 140%;
+    font-family: 'Tinos', serif;
+}
+.resume{
+    color: #787878;
+}
+.resume:hover{
+    text-decoration: none;
+    color: #d59d11;
+}
