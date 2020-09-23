@@ -1,0 +1,51 @@
+.navbar {
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	font-size: 9vw;
+	top: 8rem;
+	left: 10rem;
+}
+.helloLink::after {
+	position: relative;
+	content: 'Hello.';
+	display: inline-block;
+	background: -webkit-linear-gradient(#fae8ba, #d59d11);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.helloLink:hover:after {
+	content: 'About';
+}
+.projectLink::after {
+	position: relative;
+	content: 'I am';
+	display: inline-block;
+	color: #EEEEEE;
+}
+.projectLink:hover:after {
+	content: 'Projects';
+}
+.contactLink::after {
+	position: relative;
+	content: 'Roshonia';
+	display: inline-block;
+	color: #EEEEEE;
+}
+.contactLink:hover:after {
+	content: 'Contact';
+}
+@media (max-width: 600px) {
+	.navbar {
+		left: 12%;
+		font-size: 400%;
+	}
+	.helloLink::after {
+		content: 'About';
+	}
+	.projectLink::after {
+		content: 'Projects';
+	}
+	.contactLink::after {
+		content: 'Contact';
+	}
+}
