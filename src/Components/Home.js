@@ -10,7 +10,7 @@ export default function Home(props) {
 	
 		return (
 		<div>
-			<Navbar className=' navbar navbar-expand-xl' >
+			<Navbar className=' homeNavbar ' >
 				<ReactNav className='mr-auto hLinks'>
 					<ReactNav.Link className='helloLink' href='/about' 
 					>

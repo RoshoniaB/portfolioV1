@@ -1,9 +1,11 @@
 import React from 'react';
 import './component.css';
+import Nav from './Nav.js'
 
 export default function About() {
 	return (
 		<div className='aboutContainer'>
+			<Nav />
 			<h1 className='aHeading'>
 				I design creative & accessible apps for everyone
 			</h1>

@@ -10,8 +10,8 @@ import './App.css';
 
 const App: React.FC = () => {
 	const selected = useModeSelector({
-		light: { color: '#EFF7FA', colors: 'black', name: 'Light' },
-		dark: { color: '#161616', name: 'Dark' },
+		light: { color: '#EFF7FA', name: 'Light',dis:'disabled' },
+		dark: { color: '#161616', name: 'Dark', dis: 'enabled' },
 		unset: { color: 'blue', name: 'Unset' },
 	});
 
@@ -24,7 +24,7 @@ const App: React.FC = () => {
 				height: '100%',
 			}}>
 			<div style={{ color: '#787878', fontSize: '9px' }}>
-				{selected.name} <p>Dark Mode enabled</p>
+				{selected.name} <p>Dark Mode {selected.dis}</p>
 			</div>
 
 			<Route
