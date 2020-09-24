@@ -24,7 +24,7 @@ const App: React.FC = () => {
 				height: '100%',
 			}}>
 			<div style={{ color: '#787878', fontSize: '9px' }}>
-				{selected.name} <p>Dark Mode {selected.dis}</p>
+				<p>{selected.name} Mode {selected.dis}</p>
 			</div>
 
 			<Route
