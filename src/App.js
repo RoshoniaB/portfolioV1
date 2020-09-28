@@ -10,7 +10,7 @@ import './App.css';
 
 const App: React.FC = () => {
 	const selected = useModeSelector({
-		light: { color: '#EFF7FA', name: 'Light',dis:'disabled' },
+		light: { color: '#EFF7FA', name: 'Light', dis: 'enabled' },
 		dark: { color: '#161616', name: 'Dark', dis: 'enabled' },
 		unset: { color: 'blue', name: 'Unset' },
 	});

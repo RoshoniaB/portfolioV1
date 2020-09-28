@@ -7,20 +7,20 @@
 }
 /* About & Contact*/
 .aboutContainer,
-.contactContainer {
+.contactContainer, .projectsContainer {
 	color: #787878;
 	font-family: 'Oswald', sans-serif;
 	padding: 1rem 1rem 1rem 1rem;
 }
 .aTitle,
-.cTitle {
+.cTitle,.pTitle {
 	background: -webkit-linear-gradient(#fae8ba, #d59d11);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 400%;
 }
 .aHeading,
-.cHeading {
+.cHeading,.pHeading {
 	font-size: 500%;
 }
 .aboutContent,
@@ -43,6 +43,10 @@
 .github, .linkedin, .email {
 	height: 100%;
 	padding: 1rem;
+}
+.projectpic{
+	height: 40vw;
+	width: 60vw;
 }
 /* ----------------- */
 @media (max-width: 600px){
