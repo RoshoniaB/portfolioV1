@@ -2,43 +2,82 @@ import React from 'react';
 import Nav from './Nav';
 
 export default function Projects() {
+	const projects = [
+		{
+			title: 'whosrunning',
+			link: 'https://whos-running.netlify.app/',
+			gif: 'https://media.giphy.com/media/iXCVxbdnfDgNSLf8ko/giphy.gif',
+			alt: 'whos-running',
+			backend: 'https://github.com/blewin1/whosRunningBackend',
+			github: 'https://github.com/blewin1/whosRunningFrontend',
+		},
+		{
+			title: 'Aroma',
+			link: 'https://aroma-frontend.herokuapp.com/',
+			gif: 'https://media.giphy.com/media/4ZnrKflBC1aRLxQP98/giphy.gif',
+			backend: 'https://aroma-backend.herokuapp.com/wines/',
+			alt: 'aroma',
+			github: 'https://github.com/RoshoniaB/aroma-frontend',
+		},
+		{
+			title: 'flickcritic.',
+			link: 'https://flickcritic-frontend.herokuapp.com/',
+			gif: 'https://media.giphy.com/media/HVruuQcKoK25TUUhn2/giphy.gif',
+			backend: 'https://github.com/GroupFlickCritic/backend',
+			alt: 'flickcritic',
+			github: 'https://github.com/GroupFlickCritic/frontend',
+		},
+		{
+			title: 'Familiar',
+			link: 'https://familiarapp.herokuapp.com/',
+			alt: 'fammiliar',
+			gif: 'https://media.giphy.com/media/ZAFDrkOkA0ubSzSBr7/giphy.gif',
+			github: 'https://github.com/RoshoniaB/familiar',
+		},
+		{
+			title: 'Random Jeopardy',
+			link: 'https://roshoniab.github.io/rando-jeopardy/',
+			alt: 'random-jeopardy',
+			gif: 'https://media.giphy.com/media/0u51GSPpabmbXSiGhB/giphy.gif',
+			github: 'https://github.com/RoshoniaB/rando-jeopardy',
+		},
+	];
 	return (
 		<div className='projectsContainer'>
 			<h3 className='pHeading'>Projects</h3>
 			<Nav />
-			<br />
-			<h5 className='pTitle'>Random Jeopardy</h5>
-			<a
-				href='https://roshoniab.github.io/rando-jeopardy/index.html'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<img className='projectpic' alt='jeo' src='img/project1.png' />
-			</a>
-			<br />
-			<h5 className='pTitle'>Familiar</h5>
-			<a
-				href='https://familiarapp.herokuapp.com/'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<img className='projectpic' alt='jeo' src='img/project2.png' />
-			</a>
-
-			<br />
-			<h5 className='pTitle'>flickcritic.</h5>
-			<a
-				href='https://flickcritic-frontend.herokuapp.com/'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<img alt='jeo' className='projectpic' src='img/project3.png' />
-			</a>
-			<br />
-			<h5 className='pTitle'>Aroma</h5>
-			<a
-				href='https://aroma-frontend.herokuapp.com/'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<img alt='jeo' className='projectpic' src='img/project4.png' />
-			</a>
+			{projects.map((project) => {
+				return (
+					<div>
+						<h5 className='pTitle'>{project.title}</h5>
+						<div
+							style={{
+								width: '100%',
+								paddingBottom: '65%',
+								position: 'relative',
+							}}>
+							<a href={project.link} target='_blank' rel='noopener noreferrer'>
+								<img
+									src={project.gif}
+									width='60%'
+									height='60%'
+									style={{ position: 'absolute' }}
+									frameBorder='2'
+									alt={project.alt}
+									allowFullScreen
+									async
+								/>
+							</a>
+						</div>
+						<a href={project.backend} target='_blank' rel='noopener noreferrer'>
+							<h4>Github Backend</h4>
+						</a>
+						<a href={project.github} target='_blank' rel='noopener noreferrer'>
+							<h4>Github Frontend</h4>
+						</a>
+					</div>
+				);
+			})}
 		</div>
 	);
 }
