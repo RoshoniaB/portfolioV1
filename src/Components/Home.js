@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav as ReactNav, Navbar } from 'react-bootstrap';
+import { Nav as ReactNav, Navbar, Image } from 'react-bootstrap';
 import './home.css';
 
 export default function Home(props) {
@@ -10,6 +10,9 @@ export default function Home(props) {
 	
 		return (
 		<div>
+			<Image fluid src='img/headshot.png' className='headshot'></Image>
+			<div style={{position:'relative'}}>
+
 			<Navbar className=' homeNavbar ' >
 				<ReactNav className='mr-auto hLinks'>
 					<ReactNav.Link className='helloLink' href='/about' 
@@ -23,6 +26,7 @@ export default function Home(props) {
 					</ReactNav.Link>
 				</ReactNav>
 			</Navbar>
+			</div>
 		</div>
 	);
 }

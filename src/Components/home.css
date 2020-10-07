@@ -1,3 +1,9 @@
+.headshot{
+	position: relative;
+	float: right;
+	width: 50vw;
+
+}
 .navbar {
 	font-family: 'Oswald', sans-serif;
 	position: relative;
@@ -47,5 +53,8 @@
 	}
 	.contactLink::after {
 		content: 'Contact';
+	}
+	.headshot{
+		display: none;
 	}
 }
