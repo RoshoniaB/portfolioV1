@@ -1,7 +1,7 @@
 .app{
   height: 100vw;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   padding: 10em 20em 10em 20em;
-  overflow: auto;
+  overflow-y: visible;
 }
