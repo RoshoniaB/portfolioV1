@@ -41,7 +41,9 @@ export default function About() {
 					and am at my best when I’m sharing my creative expressions with
 					others.
 				</p>
-				<a className="resume" href='https://drive.google.com/file/d/1Pxx0M7aPBqO0JYB2fJji6FIpy2RpZnLq/view?usp=sharing'>
+				<a
+					className='resume'
+					href='https://drive.google.com/file/d/1by2Wb3CRceKm2NX5rAFcycF7M736oGi9/view?usp=sharing'>
 					My resume
 				</a>
 			</main>
