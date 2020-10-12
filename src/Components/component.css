@@ -1,26 +1,42 @@
 /* Nav */
-.homeNav {
-	color: #923b20;
+.homeNav::after {
+	content: 'Roe';
+	display: inline-block;
 	position: absolute;
 	left: 85%;
 	top: 70%;
+	color: #ad974f;
+}
+.homeNav:hover:after {
+	content: 'Roe.dev';
+	left: 80%;
 }
 /* About & Contact*/
 .aboutContainer,
-.contactContainer, .projectsContainer {
+.contactContainer,
+.projectsContainer {
 	color: #787878;
 	font-family: 'Oswald', sans-serif;
 	padding: 1rem 1rem 1rem 1rem;
 }
+.project{
+	display: grid;
+  grid-template-columns: 1fr fr;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+}
+
 .aTitle,
-.cTitle,.pTitle {
+.cTitle,
+.pTitle {
 	background: -webkit-linear-gradient(#fae8ba, #d59d11);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-size: 400%;
 }
 .aHeading,
-.cHeading,.pHeading {
+.cHeading,
+.pHeading {
 	font-size: 500%;
 }
 .aboutContent,
@@ -29,28 +45,38 @@
 	font-family: 'Tinos', serif;
 }
 .resume {
-	color: #923b20;
+	color: #ad974f;
+	font-size: 120%;
 }
 .resume:hover {
 	text-decoration: none;
-	color: #d59d11;
+	color: #923b20;
 }
 .contactLinks {
-	/* padding: 1rem 1rem 1rem 1rem; */
 	height: 10vw;
 	width: 10vw;
 }
-.github, .linkedin, .email {
+.github,
+.linkedin,
+.email {
 	height: 100%;
 	padding: 1rem;
 }
-.projectpic{
-	height: 40vw;
-	width: 60vw;
+.projectpic {
+	height: 40em;
+	width: 35em; 
+   position: 'relative'
 }
 /* ----------------- */
-@media (max-width: 600px){
-	.github, .linkedin, .email {
-	height: 200%;
-}
+@media (max-width: 600px) {
+	.github,
+	.linkedin,
+	.email {
+		height: 200%;
+	}
+	.homeNav::after {
+		content: 'Roe';
+		position: absolute;
+		left: 100%;
+	}
 }

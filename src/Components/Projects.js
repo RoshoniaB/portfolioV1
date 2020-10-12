@@ -48,32 +48,33 @@ export default function Projects() {
 			<Nav />
 			{projects.map((project) => {
 				return (
-					<div>
+					<div className='project'>
 						<h5 className='pTitle'>{project.title}</h5>
 						<div
 							style={{
-								width: '100%',
-								paddingBottom: '65%',
+								width: '10%',
+								paddingBottom: '10%',
 								position: 'relative',
 							}}>
 							<a href={project.link} target='_blank' rel='noopener noreferrer'>
 								<img
 									src={project.gif}
-									width='60%'
-									height='60%'
-									style={{ position: 'absolute' }}
-									frameBorder='2'
 									alt={project.alt}
 									allowFullScreen
 									async
+									className='projectpic'
 								/>
 							</a>
 						</div>
 						<a href={project.backend} target='_blank' rel='noopener noreferrer'>
-							<h4>Github Backend</h4>
+							<h4 style={{ color: '#8e793e', textDecoration: 'none' }}>
+								Github Backend
+							</h4>
 						</a>
 						<a href={project.github} target='_blank' rel='noopener noreferrer'>
-							<h4>Github Frontend</h4>
+							<h4 style={{ color: '#8e793e', textDecoration: 'none' }}>
+								Github Frontend
+							</h4>
 						</a>
 					</div>
 				);

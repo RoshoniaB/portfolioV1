@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './Nav.js';
+import ContactNav from './ContactNav.js'
 
 export default function Contact() {
 	return (
@@ -22,15 +23,7 @@ export default function Contact() {
 				Feel free to reach out throught any of the platforms below:
 			</p>
 			<footer className='contactLinks'>
-				<a href='https://www.roshoniabrooks@gmail.com'>
-					<img className='email' src='img/email.png' alt='email' />
-				</a>
-				<a href='https://www.linkedin.com/in/roshonia-brooks/'>
-					<img className='linkedin' src='img/goldLinkedin.png' alt='linkedin' />
-				</a>
-				<a href='https://github.com/RoshoniaB'>
-					<img className='github' src='img/goldGit.png' alt='github' />
-				</a>
+				<ContactNav />
 			</footer>
 		</div>
 	);

@@ -10,8 +10,18 @@ import './App.css';
 
 const App: React.FC = () => {
 	const selected = useModeSelector({
-		light: { color: '#EFF7FA', name: 'Light', dis: 'enabled' },
-		dark: { color: '#000000', name: 'Dark', dis: 'enabled' },
+		light: {
+			color: '#eaeaea',
+			name: 'Light',
+			dis: 'enabled',
+			font: '#231f20',
+		},
+		dark: {
+			color: '#000000',
+			name: 'Dark',
+			dis: 'enabled',
+			font: '#eaeaea',
+		},
 		unset: { color: 'blue', name: 'Unset' },
 	});
 
@@ -22,9 +32,12 @@ const App: React.FC = () => {
 				padding: '1em 2em ',
 				backgroundColor: selected.color,
 				height: '100%',
+				color: selected.font,
 			}}>
 			<div style={{ color: '#787878', fontSize: '9px' }}>
-				<p>{selected.name} Mode {selected.dis}</p>
+				<p>
+					{selected.name} Mode {selected.dis}
+				</p>
 			</div>
 
 			<Route

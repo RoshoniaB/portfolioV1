@@ -1,26 +1,30 @@
-.headshot{
-	position: relative;
-	float: right;
-	left: 16vw;
-	width: 57vw;
-	top: 10rem;
-	height: 55vw;
-
+.home {
+	position: fixed;
+}
+.headshot {
+	position: absolute;
+	left: 45vw;
+	width: 100em;
+	bottom: -28em;
+	height: 90em;
 }
 .navbar {
 	font-family: 'Oswald', sans-serif;
 	position: relative;
-	font-size: 10vw;
+	font-size: 15rem;
 	top: 8rem;
 	left: 10rem;
+	padding: 0px 20vw;
+	color: #8e793e;
+}
+.sub {
+	font-size: 5rem;
+	color: #ad974f;
 }
 .helloLink::after {
 	position: relative;
 	content: 'Hello.';
 	display: inline-block;
-	background: -webkit-linear-gradient(#fae8ba, #d59d11);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 .helloLink:hover:after {
 	content: 'About';
@@ -29,7 +33,7 @@
 	position: relative;
 	content: 'I am';
 	display: inline-block;
-	color: #787878;
+	color: #8e793e;
 }
 .projectLink:hover:after {
 	content: 'Projects';
@@ -38,15 +42,39 @@
 	position: relative;
 	content: 'Roshonia';
 	display: inline-block;
-	color: #787878;
+	color: #8e793e;
 }
 .contactLink:hover:after {
 	content: 'Contact';
 }
+@media only screen and (min-width: 801px) and (max-width: 1440px) {
+	.headshot {
+		left: 25vw;
+		width: 95em;
+		height: 90em;
+		bottom: -28em;
+	}
+}
+@media (max-width: 800px) {
+	.navbar {
+		font-size: 15vw;
+	}
+	.headshot {
+		left: 10vw;
+		width: 90em;
+		bottom: -40em;
+	}
+}
 @media (max-width: 600px) {
 	.navbar {
-		left: 12%;
-		font-size: 400%;
+		left: -17%;
+		font-size: 680%;
+	}
+	.sub {
+		font-size: 350%;
+		padding: 0% 0%;
+		text-align: center;
+		left: -1%;
 	}
 	.helloLink::after {
 		content: 'About';
@@ -57,7 +85,7 @@
 	.contactLink::after {
 		content: 'Contact';
 	}
-	.headshot{
+	.headshot {
 		display: none;
 	}
 }
