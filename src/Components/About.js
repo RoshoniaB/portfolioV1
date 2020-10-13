@@ -43,7 +43,7 @@ export default function About() {
 				</p>
 				<a
 					className='resume'
-					href='https://drive.google.com/file/d/1by2Wb3CRceKm2NX5rAFcycF7M736oGi9/view?usp=sharing'>
+					href='https://drive.google.com/file/d/15u18KGWnrIJML__iRPCdiaHMB_iL1NW4/view?usp=sharing'>
 					My resume
 				</a>
 			</main>
