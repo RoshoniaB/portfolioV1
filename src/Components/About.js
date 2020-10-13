@@ -1,6 +1,6 @@
 import React from 'react';
 import './component.css';
-import Nav from './Nav.js'
+import Nav from './Nav.js';
 
 export default function About() {
 	return (
@@ -43,7 +43,9 @@ export default function About() {
 				</p>
 				<a
 					className='resume'
-					href='https://drive.google.com/file/d/15u18KGWnrIJML__iRPCdiaHMB_iL1NW4/view?usp=sharing'>
+					href='https://drive.google.com/file/d/15u18KGWnrIJML__iRPCdiaHMB_iL1NW4/view?usp=sharing'
+					target='_blank'
+					rel='noopener noreferrer'>
 					My resume
 				</a>
 			</main>
