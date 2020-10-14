@@ -43,7 +43,7 @@ export default function About() {
 				</p>
 				<a
 					className='resume'
-					href='https://drive.google.com/file/d/15u18KGWnrIJML__iRPCdiaHMB_iL1NW4/view?usp=sharing'
+					href='https://collincollege620-my.sharepoint.com/:w:/g/personal/rbrooks10_collin_edu/EY4f_pqRldFLiHWL5STtl24Bt2iXckDx8N6uvrMP5EtPRA?e=bSJfEb'
 					target='_blank'
 					rel='noopener noreferrer'>
 					My resume
